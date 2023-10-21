@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2 class="text-center mt-4">View Contact</h2>
+
+            <p class="mt-3">
+
+
+            </p>
+        </div>
+    </div>
+
+    
+    <div class="row mt-5">
+        <div class="col-3">
+            <img [src] ="contact.photo">     
+        </div>
+        <div class="col-7">
+            <ul class="list-group">
+                
+                <li class="list-group-item">Id:{{contact.id}}</li>
+                <li class="list-group-item">Name: {{contact.name}}</li>
+                <li class="list-group-item">Phone No: {{contact.phone}}</li>
+                <li class="list-group-item">Email: {{contact.email}}</li>
+                <li class="list-group-item">Company: {{contact.company}}</li>
+                <li class="list-group-item">Title: {{contact.title}}</li>
+                
+              </ul>
+        </div>
+
+    </div>
+    <br> <br> <br>
+    <button class="btn btn-secondary mb-5 " style="background-color:rgb(1, 1, 130)" routerLink="">Go Back</button>
+</div>
+
