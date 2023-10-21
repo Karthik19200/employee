@@ -11,7 +11,7 @@ export class ApiService {
   baseUrl = 'http://localhost:3000/contacts'
 
   //dependency injection 
-  constructor(private http: HttpClient) { } // hover for quick fix (then it will import)
+  constructor(private http: HttpClient) { } 
 
   //function for get all contacts
   getAllContact(): Observable<MyContact> {
