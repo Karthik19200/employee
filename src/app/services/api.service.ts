@@ -18,19 +18,19 @@ export class ApiService {
     return this.http.get(this.baseUrl)
   }
 
-  //api call for fetch particular contact details   //after 21
+  //api call for fetch particular employee details  
   viewContacts(contactId: string) {
 
     return this.http.get(`${this.baseUrl}/${contactId}`)  //hhtp://localhost:3000/contacts/c2
   }
 
 
-  //api call to fetch group names
+
   getGroupName(groupId: string) {
     return this.http.get('http://localhost:3000/groups/' + groupId)
   }
 
-  //api call to fetch group details
+
   getAllGroups() {
     return this.http.get('http://localhost:3000/groups')
   }
@@ -45,7 +45,7 @@ export class ApiService {
 
     return this.http.delete(`${this.baseUrl}/${contactId}`)
   }
-
+  //api call for Updating a contact in the server
   updateContact(contactId:any,contactBody:any){
     return this.http.put(`${this.baseUrl}/${contactId}`,contactBody)
     
