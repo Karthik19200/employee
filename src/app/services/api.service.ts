@@ -21,7 +21,7 @@ export class ApiService {
   //api call for fetch particular employee details  
   viewContacts(contactId: string) {
 
-    return this.http.get(`${this.baseUrl}/${contactId}`)  //hhtp://localhost:3000/contacts/c2
+    return this.http.get(`${this.baseUrl}/${contactId}`)  
   }
 
 
