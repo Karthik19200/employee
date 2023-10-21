@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class AddContactComponent implements OnInit {
 
-  allGroups: any = []   //to assign group value
+  allGroups: any = []   
 
   contact: MyContact = {}
 
